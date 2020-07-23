@@ -7,6 +7,7 @@ Some of the techniques required to pass the FreeCodeCamp tests were not covered 
 - Utilized HTML5, CSS3, d3.js, and JavaScript
 - Shows a scatterplot of Doping in Professional Bicycle Racing
 - Dataset is in a GitHub JSON file
+- Name and doping comment display on mouse-over
 
 ## Resources:
 
