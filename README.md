@@ -1,12 +1,14 @@
 # FreeCodeCamp d3 Scatterplot Project
 
+A scatterplot of doping in professional bicycle racing using d3.js to beat FreeCodeCamp's coding challenge.  
+
 ## Project Challenges:
 
 Some of the techniques required to pass the FreeCodeCamp tests were not covered in the FreeCodeCamp tutorials so I ended up learning them from Ganesh H.'s YouTube video.
 
 ## Features:
 
-- Utilized HTML5, CSS3, d3.js, and JavaScript
+- Utilizes HTML5, CSS3, d3.js, and JavaScript
 - Shows a scatterplot of Doping in Professional Bicycle Racing
 - Dataset is in a GitHub JSON file
 - Name and doping comment display on mouse-over
