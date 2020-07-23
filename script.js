@@ -48,6 +48,13 @@ let generateScales = () => {
 
 let drawCircles = () => {
 
+    let tooltip = d3.select('body')
+                    .append('div')
+                    .attr('id', 'tooltip')
+                    .style('visibility', 'hidden')
+                    .style('width', 'auto')
+                    .style('height', 'auto')
+
     svg.selectAll("circle")
         .data(values)
         .enter()
@@ -65,6 +72,19 @@ let drawCircles = () => {
         }) 
         .attr('data-yvalue', (item) => {
             return new Date(item['Seconds'] * 1000)
+        })
+        .on('mouseover', (item) => {
+            tooltip.transition()
+                .style('visibility', 'visible')
+            
+            tooltip.text(item["Name"] + ": " + item["Doping"])
+
+            document.querySelector('#tooltip').setAttribute("data-year", item["Year"])
+
+        })
+        .on('mouseout', (item) => {
+            tooltip.transition()
+                .style('visibility', 'hidden')
         })
 }
 
@@ -88,7 +108,6 @@ let generateAxes = () => {
         .attr('id', 'y-axis')
         .attr('transform', 'translate(' + padding + ', 0)')
 }
-
 
 // Set up JSON API and call functions
 
