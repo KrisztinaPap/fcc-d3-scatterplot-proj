@@ -4,6 +4,8 @@
 
 Some of the techniques required to pass the FreeCodeCamp tests were not covered in the FreeCodeCamp tutorials so I ended up learning them from Ganesh H.'s YouTube video.
 
+## Features:
+
 - Utilized HTML5, CSS3, d3.js, and JavaScript
 - Shows a scatterplot of Doping in Professional Bicycle Racing
 - Dataset is in a GitHub JSON file
